@@ -61,8 +61,8 @@ task main() {
 		posX += (encAvg - encAvgLast) * cosDegrees(angle / 10);
 		posY += (encAvg - encAvgLast) * sinDegrees(angle / 10);
 
-encAvgLast = encAvg;
-timeLast = time;
+		encAvgLast = encAvg;
+		timeLast = time;
 
 		setRDrive(arcR(RX, LY));
 		setLDrive(arcL(RX, LY));
